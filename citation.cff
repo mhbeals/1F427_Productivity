@@ -1,0 +1,20 @@
+cff-version: 1.0.3
+message: If you use this software, please cite it as below.
+authors:
+  - family-names: Beals
+    given-names: M. H.
+    orcid: https://orcid.org/0000-0002-2907-3313
+    affiliation: "Loughborough University"
+    email: "m.h.beals@lboro.ac.uk"
+    website: http://www.mhbeals.com
+  - family-names: Graham
+    given-names: James
+  - family-names: Jackson
+    given-names: Adam
+  - family-names: McCann
+    given-names: Patrick     
+  - family-names: Williams
+    given-names: Matt
+title: 1F427 Productivity
+version: 0.0.0.1
+date-released: 2018-03-27
