@@ -6,32 +6,40 @@
         <div class="row">
             {% bootstrap_field form.task_text show_label=False %}
         </div>
+
         <div class="row">
             {% buttons %}
-            <label class="btn btn-default">
-                <input type="radio" name="state" id="0"> New
-            </label>
-            <label class="btn btn-default">
-                <input type="radio" name="state" id="1"> Ongoing
-            </label>
-            <label class="btn btn-default">
-                <input type="radio" name="state" id="2"> Done
-            </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="state" id="0"> New
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="state" id="1"> Ongoing
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="state" id="2"> Done
+                </label>
             {% endbuttons %}
         </div>
+
         <div class="row">
-            {% bootstrap_field form.quantifier show_label=False %}
-            {% bootstrap_field form.unit show_label=False %}
+            <div class="input-group">
+                {% bootstrap_field form.quantifier show_label=False %}
+                <div class="input-group-btn" style="width: 20%;">
+                    {% bootstrap_field form.unit show_label=False %}
+                </div>
+            </div>
         </div>
-        {{ form.user_id.as_hidden }}
-        {{ form.emoji.as_hidden }}
+
+        {% bootstrap_form form exclude='task_text,quantifier,unit' %}
+
         <div class="row">
             {% for emoji in emoji_options %}
                 {{emoji.emoji_code}}
             {% endfor %}
         </div>
+
         {% buttons %}
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary btn-block">
                 Submit
             </button>
         {% endbuttons %}
