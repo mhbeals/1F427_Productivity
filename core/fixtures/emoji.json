@@ -1,0 +1,10 @@
+[
+  {
+    "model": "core.Emoji",
+    "pk": 1,
+    "fields": {
+      "emoji_code": "😀",
+      "group": "0"
+    }
+  }
+]
