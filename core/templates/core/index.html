@@ -2,9 +2,23 @@
 
 <html>
     <head>
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>🐧</title>
     </head>
     <body>
-        <h1>🐧</h1>
+        <div class="container">
+            <h1>🐧</h1>
+            <form action="/url/to/submit/" method="post" class="form">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% buttons %}
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                {% endbuttons %}
+            </form>
+        </div>
     </body>
 </html>
