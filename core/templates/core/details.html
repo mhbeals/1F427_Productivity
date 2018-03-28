@@ -1,4 +1,58 @@
 {% load bootstrap3 %}
-<div id="{{time}}-{{group}}-details" class="container-fluid {{time}} {{group}} analytics" style="height:100%">
-    <h1>Details for {{time}}, {{group}}</h1>
+<div id="{{time}}-happy-details" class="container-fluid {{time}} happy analytics" style="height:100%;overflow:hidden">
+    <h1>Details for happy in the {{time}}</h1>
+    <a href="#{{time}}-overview">Go Back</a>
+    <table width='100%' class='table table-striped table-bordered' >
+        <tr>
+            <th>Emoji</th>
+            <th>Task</th>
+            <th>Duration</th>
+        </tr>
+    {% for task in morning.happy %}
+        <tr class="state_{{task.state}}">
+            <td>{{task.emoji}}</td>
+            <td>{{task.task_text}}</td>
+            <td>{{task.quantifier}} {{task.unit}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+
+<div id="{{time}}-not_so_happy-details" class="container-fluid {{time}} not_so_happy analytics" style="height:100%;overflow:hidden">
+    <h1>Details for unhappy in the {{time}}</h1>
+    <a href="#{{time}}-overview">Go Back</a>
+    <table width='100%' class='table table-striped table-bordered' >
+        <tr>
+            <th>Emoji</th>
+            <th>Task</th>
+            <th>Duration</th>
+        </tr>
+        {% for task in morning.not_so_happy %}
+        <tr class="state_{{task.state}}">
+            <td>{{task.emoji}}</td>
+            <td>{{task.task_text}}</td>
+            <td>{{task.quantifier}} {{task.unit}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+<div id="{{time}}-working_thinking-details" class="container-fluid {{time}} working_thinking analytics" style="height:100%;overflow:hidden">
+    <h1>Details for working or thinking in the {{time}}</h1>
+    <a href="#{{time}}-overview">Go Back</a>
+    <table width='100%' class='table table-striped table-bordered' >
+        <tr>
+            <th>Emoji</th>
+            <th>Task</th>
+            <th>Duration</th>
+        </tr>
+        {% for task in morning.working_thinking %}
+        <tr class="state_{{task.state}}">
+            <td>{{task.emoji}}</td>
+            <td>{{task.task_text}}</td>
+            <td>{{task.quantifier}} {{task.unit}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
