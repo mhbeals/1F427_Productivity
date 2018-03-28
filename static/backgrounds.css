@@ -2,20 +2,31 @@
     background: #fde5f0;
 }
 
-#morning-overview {
+#form-display h1 {
+    font-size: 36pt;
+    text-align: center;
+}
 
-    background: #fde5f0; /* For browsers that do not support gradients */
-    background: linear-gradient(#fde5f0 70%, #ffffd8); /* Standard syntax (must be last) */
+#morning-overview {
+    background-color: #fde5f0; /* For browsers that do not support gradients */
+    background-image: url("/static/semi-sun-up.png");
+    background-image: url("/static/semi-sun-up.png"), linear-gradient(#fde5f0 70%, #ffffd8); /* Standard syntax (must be last) */
+    background-position: left bottom;
+    background-repeat: no-repeat;
 }
 #afternoon-overview {
-
-    background: #ffffd8; /* For browsers that do not support gradients */
-    background: linear-gradient(#ffffd8, #e0f3fe 70%); /* Standard syntax (must be last) */
+    background-color: #ffffd8; /* For browsers that do not support gradients */
+    background-image: url("/static/semi-sun-up.png");
+    background-image: url("/static/semi-sun-down.png"), linear-gradient(#ffffd8, #e0f3fe 70%); /* Standard syntax (must be last) */
+    background-position: right top;
+    background-repeat: no-repeat;
 }
 #night-overview {
-
-    background: #dfdff8; /* For browsers that do not support gradients */
-    background: linear-gradient(#e0f3fe 10%, #dfdff8); /* Standard syntax (must be last) */
+    background-color: #dfdff8; /* For browsers that do not support gradients */
+    background-image: url("/static/moon.png");
+    background-image: url("/static/moon.png"), linear-gradient(#e0f3fe 10%, #dfdff8); /* Standard syntax (must be last) */
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
 

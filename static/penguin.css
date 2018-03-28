@@ -1,0 +1,11 @@
+.row-center {
+    text-align: center;
+}
+.col-center {
+    display: inline-block;
+    float: none;
+}
+.emoji {
+    font-size: 36pt;
+    font-family: "Noto Color Emoji";
+}

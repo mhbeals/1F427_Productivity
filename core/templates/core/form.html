@@ -1,64 +1,71 @@
 {% load bootstrap3 %}
 <div id="form-display" class="container-fluid" style="height:100%">
-    <h1>🐧</h1>
-    <form method="post" class="form-inline">
-        {% csrf_token %}
+    <h1>🐧 Productivity</h1>
 
-        <script type="application/javascript">
-            function set_emoji(emoji_id){
-                var field = document.getElementById('id_emoji');
-                field.value = emoji_id;
-            }
+    <div class="row row-center">
+        <div class="col-md-4 col-center">
+            <form method="post">
+                {% csrf_token %}
 
-            function set_state(state_code){
-                var field = document.getElementById('id_state');
-                field.value = state_code;
-            }
-        </script>
+                <script type="application/javascript">
+                    function set_emoji(emoji_id){
+                        var field = document.getElementById('id_emoji');
+                        field.value = emoji_id;
+                    }
 
-        <div class="row">
-            {% bootstrap_field form.task_text show_label=False %}
-        </div>
+                    function set_state(state_code){
+                        var field = document.getElementById('id_state');
+                        field.value = state_code;
+                    }
+                </script>
 
-        <div class="row">
-            {% buttons %}
-                <label class="btn btn-default" onclick="set_state(0);">
-                    <input type="radio" name="state" id="0"> New
-                </label>
-                <label class="btn btn-default" onclick="set_state(1);">
-                    <input type="radio" name="state" id="1"> Ongoing
-                </label>
-                <label class="btn btn-default" onclick="set_state(2);">
-                    <input type="radio" name="state" id="2"> Done
-                </label>
-            {% endbuttons %}
-        </div>
-
-        <div class="row">
-            <div class="input-group">
-                {% bootstrap_field form.quantifier show_label=False %}
-                <div class="input-group-btn" style="width: 20%;">
-                    {% bootstrap_field form.unit show_label=False %}
+                <div class="row">
+                    {% bootstrap_field form.task_text show_label=False %}
                 </div>
-            </div>
-        </div>
 
-        {% bootstrap_form form exclude='task_text,quantifier,unit' %}
-
-        <div class="row">
-            {% for emoji in emoji_options %}
-                <div class="btn btn-default" onclick="set_emoji({{ emoji.id }});">
-                    {{emoji.emoji_code}}
+                <div class="row">
+                    {% buttons %}
+                        <label class="btn btn-default" onclick="set_state(0);">
+                            <input type="radio" name="state" id="0"> New
+                        </label>
+                        <label class="btn btn-default" onclick="set_state(1);">
+                            <input type="radio" name="state" id="1"> Ongoing
+                        </label>
+                        <label class="btn btn-default" onclick="set_state(2);">
+                            <input type="radio" name="state" id="2"> Done
+                        </label>
+                    {% endbuttons %}
                 </div>
-            {% endfor %}
-        </div>
 
-        {% buttons %}
-            <button type="submit" class="btn btn-primary btn-block">
-                Submit
-            </button>
-        {% endbuttons %}
-    </form>
+                <div class="row">
+                    <div class="input-group">
+                        {% bootstrap_field form.quantifier show_label=False %}
+                        <div class="input-group-btn" style="width: 20%;">
+                            {% bootstrap_field form.unit show_label=False %}
+                        </div>
+                    </div>
+                </div>
+
+                {% bootstrap_form form exclude='task_text,quantifier,unit' %}
+
+                <div class="row row-center">
+                    {% for emoji in emoji_options %}
+                        <div class="col-center">
+                            <div class="btn btn-default btn-block emoji" onclick="set_emoji({{ emoji.id }});">
+                                {{emoji.emoji_code}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                {% buttons %}
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Submit
+                    </button>
+                {% endbuttons %}
+            </form>
+        </div>
+    </div>
     <ul>
         <li><a href="#morning-overview">Go to morning overview</a></li>
         <li><a href="#afternoon-overview">Go to afternoon overview</a></li>
