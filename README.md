@@ -31,21 +31,10 @@ pip install -r requirements.txt
 
 When you are finished you can deactivate the virtualenv with `deactivate`.
 
-## Setup
-
-Build the database and import stuff:
-
-``` bash
-python manage.py migrate
-python manage.py loaddata core/fixtures/emoji.json
-python manage.py loaddata core/fixtures/units.yaml
-python manage.py loaddata core/fixtures/tasks.yaml
-```
-
 ## Usage
 
-Currently 1F427 runs on a local web server. Launch this with
+Currently 1F427 runs on a local web server. The `penguin_server` shell script will set up the database and launch this server. This expects a unix-like environment but may also be used in a Windows/anaconda environment.
 
 ```bash
-python manage.py runserver
+./penguin_server
 ```
