@@ -5,19 +5,32 @@
     <h1>🐧</h1>
     <form method="post" class="form-inline">
         {% csrf_token %}
+
+        <script type="application/javascript">
+            function set_emoji(emoji_id){
+                var field = document.getElementById('id_emoji');
+                field.value = emoji_id;
+            }
+
+            function set_state(state_code){
+                var field = document.getElementById('id_state');
+                field.value = state_code;
+            }
+        </script>
+
         <div class="row">
             {% bootstrap_field form.task_text show_label=False %}
         </div>
 
         <div class="row">
             {% buttons %}
-                <label class="btn btn-default">
+                <label class="btn btn-default" onclick="set_state(0);">
                     <input type="radio" name="state" id="0"> New
                 </label>
-                <label class="btn btn-default">
+                <label class="btn btn-default" onclick="set_state(1);">
                     <input type="radio" name="state" id="1"> Ongoing
                 </label>
-                <label class="btn btn-default">
+                <label class="btn btn-default" onclick="set_state(2);">
                     <input type="radio" name="state" id="2"> Done
                 </label>
             {% endbuttons %}
@@ -36,7 +49,9 @@
 
         <div class="row">
             {% for emoji in emoji_options %}
-                {{emoji.emoji_code}}
+                <div class="btn btn-default" onclick="set_emoji({{ emoji.id }});">
+                    {{emoji.emoji_code}}
+                </div>
             {% endfor %}
         </div>
 

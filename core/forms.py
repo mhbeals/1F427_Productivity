@@ -20,6 +20,3 @@ class TaskForm(ModelForm):
             'emoji': HiddenInput,       # Will be set by Javascript on frontend
             'user_id': HiddenInput,     # Uses default value
         }
-
-    def is_valid(self):
-        return super().is_valid()

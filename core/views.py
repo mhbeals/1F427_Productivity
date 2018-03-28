@@ -1,4 +1,7 @@
 import random
+
+from django.urls import reverse_lazy
+from django.utils import timezone
 from django.views.generic.edit import CreateView
 
 from core import forms, models
@@ -8,6 +11,7 @@ class TaskSubmitView(CreateView):
     model = models.Task
     template_name = 'core/index.html'
     form_class = forms.TaskForm
+    success_url = reverse_lazy('core:index')
 
     def get_initial(self):
         """
@@ -18,6 +22,15 @@ class TaskSubmitView(CreateView):
         initial['user_id'] = 1
 
         return initial
+
+    def form_valid(self, form):
+        """
+        Add missing fields for DB.
+        """
+
+        form.instance.timestamp = timezone.datetime.now()
+
+        return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
         """
