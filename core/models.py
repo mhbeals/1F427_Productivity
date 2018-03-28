@@ -12,8 +12,17 @@ class ChoicesEnum(enum.IntEnum):
         ) for en in cls))
 
 
+@enum.unique
+class EmojiGroup(ChoicesEnum):
+    HAPPY = 0
+    NOTSOHAPPY = 1
+    WORKINGTHINKING = 2
+    FUN = 3
+
+
 class Emoji(models.Model):
     emoji_code = models.CharField(max_length=50)
+    group = models.SmallIntegerField(choices=EmojiGroup.choices(), blank=False, null=False)
 
     def __str__(self):
         return self.emoji_code
@@ -28,9 +37,9 @@ class Unit(models.Model):
 
 @enum.unique
 class TaskState(ChoicesEnum):
-   NEW = 0
-   CONTINUING = 1
-   ENDED = 2
+    NEW = 0
+    CONTINUING = 1
+    ENDED = 2
 
 
 class Task(models.Model):
