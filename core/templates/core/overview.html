@@ -2,7 +2,57 @@
 <div id="{{time}}-overview" class="container-fluid {{time}}" style="height:100%">
     <h1>Overview for {{time}}</h1>
 
+    <div class="row row-center" style="height: 50%;">
+        <div class="col-md-4 col-center">
+            <h3 class="page-header">Happy</h3>
+            <div class="row">
+                {% for task in time_context.happy %}
+                    <div class="col-md-1 emoji">
+                        {{ task.emoji.emoji_code }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
 
+        <div class="col-md-1 col-center"></div>
+
+        <div class="col-md-4 col-center">
+            <h3 class="page-header">Not So Happy</h3>
+            <div class="row">
+                {% for task in time_context.not_so_happy %}
+                    <div class="col-md-1 emoji">
+                        {{ task.emoji.emoji_code }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-center" style="height: 50%;">
+        <div class="col-md-4 col-center">
+            <h3 class="page-header">Thinking</h3>
+            <div class="row">
+                {% for task in time_context.working_thinking %}
+                    <div class="col-md-1 emoji">
+                        {{ task.emoji.emoji_code }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col-md-1 col-center"></div>
+
+        <div class="col-md-4 col-center">
+            <h3 class="page-header">Fun</h3>
+            <div class="row">
+                {% for task in time_context.fun %}
+                    <div class="col-md-1 emoji">
+                        {{ task.emoji.emoji_code }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
 
 

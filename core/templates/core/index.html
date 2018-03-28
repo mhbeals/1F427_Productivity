@@ -12,9 +12,9 @@
     </head>
     <body>
         {% include "core/form.html"%}
-        {% include "core/overview.html" with time="morning"%}
-        {% include "core/overview.html" with time="afternoon"%}
-        {% include "core/overview.html" with time="night"%}
+        {% include "core/overview.html" with time_context=morning time="morning" %}
+        {% include "core/overview.html" with time_context=afternoon time="afternoon" %}
+        {% include "core/overview.html" with time_context=night time="night" %}
         {% include "core/details.html" with time="morning" group="happy"%}
         {% include "core/details.html" with time="morning" group="not_so_happy"%}
         {% include "core/details.html" with time="morning" group="working_thinking"%}
