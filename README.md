@@ -1,3 +1,5 @@
+** For information on the development of this app (Hackday criteria fulfilment) please visit the [development wiki](https://github.com/mhbeals/1F427_Productivity/wiki)
+
 # 1F427_Productivity
 A tool for uninhibited reflection on your productivity 
 
