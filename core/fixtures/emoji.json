@@ -1,10 +1,317 @@
 [
-  {
-    "model": "core.Emoji",
-    "pk": 1,
-    "fields": {
-      "emoji_code": "😀",
-      "group": "0"
+    {
+        "model": "core.Emoji",
+        "pk": 1,
+        "fields": {
+            "name": "SlightlySmilingFace",
+            "emoji_code": "U+1F642",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 2,
+        "fields": {
+            "name": "DogFace",
+            "emoji_code": "U+1F436",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 3,
+        "fields": {
+            "name": "SmilingFacewithHeart-Eyes",
+            "emoji_code": "U+1F60D",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 4,
+        "fields": {
+            "name": "Guitar",
+            "emoji_code": "U+1F3B8",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 5,
+        "fields": {
+            "name": "Facesavouringdeliciousfood",
+            "emoji_code": "U+1F60B",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 6,
+        "fields": {
+            "name": "Hedgehog",
+            "emoji_code": "U+1F994",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 7,
+        "fields": {
+            "name": "SmilingFacewithSmilingEyes",
+            "emoji_code": "U+1F60A",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 8,
+        "fields": {
+            "name": "WinkingFace",
+            "emoji_code": "U+1F609",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 9,
+        "fields": {
+            "name": "Upside-Down(Smiling)Face",
+            "emoji_code": "U+1F643",
+            "group": "0"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 10,
+        "fields": {
+            "name": "FoxFace",
+            "emoji_code": "U+1F98A",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 11,
+        "fields": {
+            "name": "FacewithColdSweat",
+            "emoji_code": "U+1F613",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 12,
+        "fields": {
+            "name": "GrimacingFace",
+            "emoji_code": "U+1F62C",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 13,
+        "fields": {
+            "name": "FaceScreaminginFear",
+            "emoji_code": "U+1F631",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 14,
+        "fields": {
+            "name": "DizzyFace",
+            "emoji_code": "U+1F635",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 15,
+        "fields": {
+            "name": "Violin",
+            "emoji_code": "U+1F3BB",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 16,
+        "fields": {
+            "name": "FacewithRollingEyes",
+            "emoji_code": "U+1F644",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 17,
+        "fields": {
+            "name": "ConfoundedFace",
+            "emoji_code": "U+1F616",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 18,
+        "fields": {
+            "name": "LoudlyCryingFace",
+            "emoji_code": "U+1F62D",
+            "group": "1"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 19,
+        "fields": {
+            "name": "Detective",
+            "emoji_code": "U+1F575U+200DU+2642",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 20,
+        "fields": {
+            "name": "Mage",
+            "emoji_code": "U+1F9D9U+200DU+2640",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 21,
+        "fields": {
+            "name": "NeutralFace",
+            "emoji_code": "U+1F610",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 22,
+        "fields": {
+            "name": "ThinkingFace",
+            "emoji_code": "U+1F914",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 23,
+        "fields": {
+            "name": "FacewithMonocle",
+            "emoji_code": "U+1F9D0",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 24,
+        "fields": {
+            "name": "FactoryWorker",
+            "emoji_code": "U+1F469U+1F3FEU",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 25,
+        "fields": {
+            "name": "Running",
+            "emoji_code": "U+1F3C3U+1F3FBU",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 26,
+        "fields": {
+            "name": "HorseFace",
+            "emoji_code": "U+1F434",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 27,
+        "fields": {
+            "name": "AstonishedFace",
+            "emoji_code": "U+1F632",
+            "group": "2"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 28,
+        "fields": {
+            "name": "Tomato",
+            "emoji_code": "U+1F345",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 29,
+        "fields": {
+            "name": "Penguin",
+            "emoji_code": "U+1F427",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 30,
+        "fields": {
+            "name": "Broccoli",
+            "emoji_code": "U+1F966",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 31,
+        "fields": {
+            "name": "Sparkles",
+            "emoji_code": "U+2728",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 32,
+        "fields": {
+            "name": "Ewe",
+            "emoji_code": "U+1F411",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 33,
+        "fields": {
+            "name": "ClownFace",
+            "emoji_code": "U+1F921",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 34,
+        "fields": {
+            "name": "AlienMonster",
+            "emoji_code": "U+1F47E",
+            "group": "3"
+        }
+    },
+    {
+        "model": "core.Emoji",
+        "pk": 35,
+        "fields": {
+            "name": "VulcanSalute",
+            "emoji_code": "U+1F596",
+            "group": "3"
+        }
     }
-  }
 ]
