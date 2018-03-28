@@ -1,5 +1,6 @@
 # Virtual environment
 /env/
+/venv/
 
 # IDEs
 .idea/
@@ -9,3 +10,6 @@ db.sqlite3
 
 # Python
 __pycache__/
+
+# pytest
+.pytest_cache
