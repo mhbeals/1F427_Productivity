@@ -3,3 +3,6 @@ django-bootstrap3
 django-easy-select2
 pytest-django
 pyyaml
+gunicorn
+dj-database-url 
+psycopg2
