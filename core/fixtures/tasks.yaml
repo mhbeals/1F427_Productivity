@@ -248,3 +248,33 @@
     emoji: 30
     timestamp: "2018-03-28T13:51:00+00:00"
     user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Got the intro page looking nice
+    state: 2
+    quantifier: 7
+    unit: 7
+    emoji: 33
+    timestamp: "2018-03-28T14:32:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Details page now displying correctly
+    state: 2
+    quantifier: 30
+    unit: 9
+    emoji: 3
+    timestamp: "2018-03-28T14:01:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Working overview page!
+    state: 2
+    quantifier: 4
+    unit: 9
+    emoji: 4
+    timestamp: "2018-03-28T15:07:00+00:00"
+    user_id: 1
