@@ -65,8 +65,6 @@ Windows/anaconda environment.
 + Choose the emoji that best describes the emotion associated with completing that task
 + Press "Submit"
 
-#### Users will be greeted with a large version of their emoji to indicate that it has been successfully recorded
-
 ### Analytics
 
 + Swipe down to the second page of the interface
