@@ -21,5 +21,5 @@ from core.views import TaskSubmitView
 urlpatterns = [
     url('^$',
         TaskSubmitView.as_view(),
-        'index')
+        name='index')
 ]
