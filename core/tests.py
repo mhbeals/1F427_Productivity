@@ -12,4 +12,5 @@ def django_db_setup(django_db_setup, django_db_blocker):
 @pytest.mark.django_db
 def test_random_emoji():
     from core.views import TaskSubmitView
-    TaskSubmitView.get_random_emoji()
+    emoji = TaskSubmitView.get_random_emoji()
+    assert len(emoji) == 6
