@@ -208,3 +208,43 @@
     emoji: 5
     timestamp: "2018-03-28T12:32:00+00:00"
     user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Transcribing the tasks manually
+    state: 2
+    quantifier: 2
+    unit: 3
+    emoji: 13
+    timestamp: "2018-03-28T13:05:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Emoji display on page
+    state: 2
+    quantifier: 13
+    unit: 4
+    emoji: 24
+    timestamp: "2018-03-28T13:09:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Finished colourscheme
+    state: 2
+    quantifier: 4
+    unit: 6
+    emoji: 2
+    timestamp: "2018-03-28T13:45:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Ran the first test
+    state: 2
+    quantifier: 1000
+    unit: 6
+    emoji: 30
+    timestamp: "2018-03-28T13:51:00+00:00"
+    user_id: 1
