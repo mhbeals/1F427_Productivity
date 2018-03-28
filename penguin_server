@@ -1,7 +1,11 @@
-#! /usr/bin/env bash
+#! /usr/bin/env python3
 
-python manage.py migrate
-python manage.py loaddata core/fixtures/emoji.json
-python manage.py loaddata core/fixtures/units.yaml
-python manage.py loaddata core/fixtures/tasks.yaml
-python manage.py runserver
+from subprocess import call
+
+for args in (['flush', '--noinput'],
+             ['migrate'],
+             ['loaddata', 'core/fixtures/emoji.json'],
+             ['loaddata', 'core/fixtures/units.yaml'],
+             ['loaddata', 'core/fixtures/tasks.yaml'],
+             ['runserver']):
+    call(['python3', 'manage.py'] + args)

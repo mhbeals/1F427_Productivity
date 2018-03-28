@@ -1,46 +1,7 @@
 # 1F427_Productivity
 A tool for uninhibited reflection on your productivity 
 
-1F427 (pronounced ":penguin:") allows you to log your activities with
-informal measures of time spent and emotional response. The purpose is
-*not* to enable "serious" accounting of your time, but to help manage
-your mood and energy. What activities make you happier when done in
-the morning?
-
-## Requirements
-
-This project is built on Python 3.4 or later.  The Django web
-framework is used for this tech demo; we recommend installing in a
-virtualenv as outlined below.
-
-
-## Installation
-
-To set up a virtualenv and install requirements from the `requirements.txt` file:
-
-```bash
-# Setup a new venv in this repository as a folder called "venv"
-python3 -m venv venv
-
-# Activate the venv
-source venv/bin/activate
-
-# Install requirements
-pip install -r requirements.txt
-```
-
-When you are finished you can deactivate the virtualenv with `deactivate`.
-
-## Usage
-
-Currently 1F427 runs on a local web server. The `penguin_server` shell script will set up the database and launch this server. This expects a unix-like environment but may also be used in a Windows/anaconda environment.
-
-```bash
-./penguin_server
-```
-
-# 1F427_Productivity
-A tool for uninhibited reflection on your productivity 
+[![Build Status](https://travis-ci.org/mhbeals/1F427_Productivity.svg?branch=master)](https://travis-ci.org/mhbeals/1F427_Productivity)
 
 1F427 (pronounced ":penguin:") allows you to log your activities with
 informal measures of time spent and emotional response. The purpose is
@@ -57,8 +18,7 @@ virtualenv as outlined below.
 
 ## Installation
 
-To set up a virtualenv and install requirements from the `requirements.txt` file:
-
+On unix-like platforms it is recommended to set up a virtualenv:
 ```bash
 # Setup a new venv in this repository as a folder called "venv"
 python3 -m venv venv
@@ -66,19 +26,36 @@ python3 -m venv venv
 # Activate the venv
 source venv/bin/activate
 
+```
+
+When you are finished you can deactivate the virtualenv with
+`deactivate`.  Within this venv, or using Anaconda on Windows, install
+the requirements from the `requirements.txt` using pip:
+
+``` bash
 # Install requirements
 pip install -r requirements.txt
 ```
 
-When you are finished you can deactivate the virtualenv with `deactivate`.
+### Testing
+
+Run the test suite with
+
+``` bash
+pytest
+```
 
 ## Usage
 
-Currently 1F427 runs on a local web server. The `penguin_server` shell script will set up the database and launch this server. This expects a unix-like environment but may also be used in a Windows/anaconda environment.
+Currently 1F427 runs on a local web server. The `penguin_server`
+python script will set up the database and launch this server. This
+expects a unix-like environment but may also be used in a
+Windows/anaconda environment.
 
 ```bash
 ./penguin_server
 ```
+
 
 ### Task Recording
 
