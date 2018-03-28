@@ -23,6 +23,7 @@ class EmojiGroup(ChoicesEnum):
 class Emoji(models.Model):
     emoji_code = models.CharField(max_length=50)
     group = models.SmallIntegerField(choices=EmojiGroup.choices(), blank=False, null=False)
+    name = models.CharField(max_length=200, default='')
 
     def __str__(self):
         return self.emoji_code
