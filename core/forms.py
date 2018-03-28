@@ -15,7 +15,7 @@ class TaskForm(ModelForm):
         model = Task
         fields = '__all__'
         widgets = {
-            'state': HiddenInput,
-            'units': select2.Select2,
-            'emoji': HiddenInput,
+            'state': HiddenInput,       # Will be set by Javascript on frontend
+            'units': select2.Select2,   # Select from options list
+            'emoji': HiddenInput,       # Will be set by Javascript on frontend
         }
