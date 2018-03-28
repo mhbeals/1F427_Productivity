@@ -56,5 +56,155 @@
     quantifier: 1
     unit: 5
     emoji: 22
-    timestamp: "2018-03-28T08:16:00+00:00"
+    timestamp: "2018-03-28T09:50:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Installation not too hard
+    state: 2
+    quantifier: 57
+    unit: 6
+    emoji: 3
+    timestamp: "2018-03-28T09:55:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Documented database
+    state: 2
+    quantifier: 15
+    unit: 7
+    emoji: 21
+    timestamp: "2018-03-28T09:59:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Still learning about Django templates
+    state: 2
+    quantifier: 4
+    unit: 8
+    emoji: 30
+    timestamp: "2018-03-28T10:03:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Core view published
+    state: 2
+    quantifier: 15
+    unit: 10
+    emoji: 10
+    timestamp: "2018-03-28T10:14:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Template renders
+    state: 2
+    quantifier: 46
+    unit: 11
+    emoji: 29
+    timestamp: "2018-03-28T10:21:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Choosing emoji
+    state: 0
+    quantifier: 100
+    unit: 12
+    emoji: 3
+    timestamp: "2018-03-28T10:40:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: It's alive
+    state: 2
+    quantifier: 3
+    unit: 7
+    emoji: 6
+    timestamp: "2018-03-28T10:43:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Choosing emoji
+    state: 2
+    quantifier: 1
+    unit: 9
+    emoji: 35
+    timestamp: "2018-03-28T10:47:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Onboarding a new team member
+    state: 2
+    quantifier: 4
+    unit: 7
+    emoji: 1
+    timestamp: "2018-03-28T10:59:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Looking for hosting
+    state: 1
+    quantifier: 20
+    unit: 10
+    emoji: 32
+    timestamp: "2018-03-28T11:00:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Created units YAML
+    state: 2
+    quantifier: 1
+    unit: 2
+    emoji: 4
+    timestamp: "2018-03-28T11:38:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Emoji choices into working YAML
+    state: 2
+    quantifier: 10
+    unit: 13
+    emoji: 5
+    timestamp: "2018-03-28T11:43:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: First fixture for the task
+    state: 1
+    quantifier: 1
+    unit: 9
+    emoji: 13
+    timestamp: "2018-03-28T11:59:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Create random emoji function
+    state: 2
+    quantifier: 2
+    unit: 8
+    emoji: 6
+    timestamp: "2018-03-28T12:27:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Eat lunch
+    state: 2
+    quantifier: 3
+    unit: 14
+    emoji: 5
+    timestamp: "2018-03-28T12:32:00+00:00"
     user_id: 1

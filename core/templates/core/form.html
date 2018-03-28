@@ -1,9 +1,9 @@
 {% load bootstrap3 %}
 {{ form.media }}
 
-<div class="container">
+<div id="form-display" class="container" style="height:100%">
     <h1>🐧</h1>
-    <form action="." method="post">
+    <form method="post" class="form-inline">
         {% csrf_token %}
         <div class="row">
             {% bootstrap_field form.task_text show_label=False %}
@@ -11,23 +11,15 @@
 
         <div class="row">
             {% buttons %}
-                <div class="col-md-4">
-                    <button class="btn btn-default btn-block">
-                        New
-                    </button>
-                </div>
-
-                <div class="col-md-4">
-                    <button class="btn btn-default btn-block">
-                        Ongoing
-                    </button>
-                </div>
-
-                <div class="col-md-4">
-                    <button class="btn btn-default btn-block">
-                        Done
-                    </button>
-                </div>
+                <label class="btn btn-default">
+                    <input type="radio" name="state" id="0"> New
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="state" id="1"> Ongoing
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="state" id="2"> Done
+                </label>
             {% endbuttons %}
         </div>
 
@@ -41,10 +33,22 @@
         </div>
 
         {% bootstrap_form form exclude='task_text,quantifier,unit' %}
+
+        <div class="row">
+            {% for emoji in emoji_options %}
+                {{emoji.emoji_code}}
+            {% endfor %}
+        </div>
+
         {% buttons %}
             <button type="submit" class="btn btn-primary btn-block">
                 Submit
             </button>
         {% endbuttons %}
     </form>
+    <ul>
+        <li><a href="#morning-overview">Go to morning overview</a></li>
+        <li><a href="#afternoon-overview">Go to afternoon overview</a></li>
+        <li><a href="#night-overview">Go to night overview</a></li>
+    </ul>
 </div>

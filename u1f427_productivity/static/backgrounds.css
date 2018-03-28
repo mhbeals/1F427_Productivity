@@ -1,0 +1,30 @@
+#inputbg {
+    background: ##F34091;
+}
+
+#morningbg {
+    
+    background: #fde5f0; /* For browsers that do not support gradients */
+    background: linear-gradient(#fde5f0 70%, #ffffd8); /* Standard syntax (must be last) */
+}
+#afternoonbg {
+    
+    background: #ffffd8; /* For browsers that do not support gradients */
+    background: linear-gradient(#ffffd8, #e0f3fe 70%); /* Standard syntax (must be last) */
+}
+#nightbg {
+    
+    background: #dfdff8; /* For browsers that do not support gradients */
+    background: linear-gradient(#e0f3fe 10%, #dfdff8); /* Standard syntax (must be last) */
+}
+
+
+#analyticsbg {
+    background: #dfdff8; 
+}
+
+/* Usage: 
+   <div id="morningbg"></div>
+   <div id="afternoonbg"></div>
+   <div id="nightbg"></div> 
+*/
