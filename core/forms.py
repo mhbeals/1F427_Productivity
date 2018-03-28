@@ -13,9 +13,13 @@ class TaskForm(ModelForm):
 
     class Meta:
         model = Task
-        fields = '__all__'
+        exclude = ['timestamp']
         widgets = {
             'state': HiddenInput,       # Will be set by Javascript on frontend
             'units': select2.Select2,   # Select from options list
             'emoji': HiddenInput,       # Will be set by Javascript on frontend
+            'user_id': HiddenInput,     # Uses default value
         }
+
+    def is_valid(self):
+        return super().is_valid()

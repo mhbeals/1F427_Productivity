@@ -1,31 +1,48 @@
 {% load bootstrap3 %}
+{{ form.media }}
+
 <div class="container">
     <h1>🐧</h1>
-    <form action="/url/to/submit/" method="post" class="form-inline">
+    <form action="." method="post">
         {% csrf_token %}
         <div class="row">
             {% bootstrap_field form.task_text show_label=False %}
         </div>
+
         <div class="row">
             {% buttons %}
-                <button class="btn btn-default">
-                    New
-                </button>
-                <button class="btn btn-default">
-                    Ongoing
-                </button>
-                <button class="btn btn-default">
-                    Done
-                </button>
+                <div class="col-md-4">
+                    <button class="btn btn-default btn-block">
+                        New
+                    </button>
+                </div>
+
+                <div class="col-md-4">
+                    <button class="btn btn-default btn-block">
+                        Ongoing
+                    </button>
+                </div>
+
+                <div class="col-md-4">
+                    <button class="btn btn-default btn-block">
+                        Done
+                    </button>
+                </div>
             {% endbuttons %}
         </div>
+
         <div class="row">
-            {% bootstrap_field form.quantifier show_label=False %}
-            {% bootstrap_field form.unit show_label=False %}
+            <div class="input-group">
+                {% bootstrap_field form.quantifier show_label=False %}
+                <div class="input-group-btn" style="width: 20%;">
+                    {% bootstrap_field form.unit show_label=False %}
+                </div>
+            </div>
         </div>
-        {{ form.user_id.as_hidden }}
+
+        {% bootstrap_form form exclude='task_text,quantifier,unit' %}
         {% buttons %}
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary btn-block">
                 Submit
             </button>
         {% endbuttons %}
