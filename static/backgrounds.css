@@ -2,6 +2,11 @@
     background: #fde5f0;
 }
 
+#form-display h1 {
+    font-size: 36pt;
+    text-align: center;
+}
+
 #morning-overview {
     background-color: #fde5f0; /* For browsers that do not support gradients */
     background-image: url("/static/semi-sun-up.png");
