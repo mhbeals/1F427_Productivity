@@ -1,0 +1,11 @@
+# Virtual environment
+/env/
+
+# IDEs
+.idea/
+
+# Data
+db.sqlite3
+
+# Python
+__pycache__/
