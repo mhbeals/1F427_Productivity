@@ -1,3 +1,7 @@
+#inputbg {
+    background: ##F34091;
+}
+
 #morningbg {
     
     background: #fde5f0; /* For browsers that do not support gradients */
@@ -12,6 +16,11 @@
     
     background: #dfdff8; /* For browsers that do not support gradients */
     background: linear-gradient(#e0f3fe 10%, #dfdff8); /* Standard syntax (must be last) */
+}
+
+
+#analyticsbg {
+    background: #dfdff8; 
 }
 
 /* Usage: 
