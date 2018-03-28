@@ -1,59 +1,59 @@
 ﻿- model: core.Unit
   pk: 1
   fields:
-    - unit_text: Cups of Coffee
+    unit_text: Cups of Coffee
 
 - model: core.Unit
   pk: 2
   fields:
-    - unit_text: Delicious Snacks
+   unit_text: Delicious Snacks
 
 - model: core.Unit
   pk: 3
   fields:
-    - unit_text: Pidgeons Bobbed by
+   unit_text: Pidgeons Bobbed by
 
 - model: core.Unit
   pk: 4
   fields:
-    - unit_text: Ignored Phone Calls
+    unit_text: Ignored Phone Calls
 
 - model: core.Unit
   pk: 5
   fields:
-    - unit_text: Web Frameworks Researched
+    unit_text: Web Frameworks Researched
 
 - model: core.Unit
   pk: 6
   fields:
-    - unit_text: Blinks
+    unit_text: Blinks
 
 - model: core.Unit
   pk: 7
   fields:
-    - unit_text: Refresh Button Presses
+    unit_text: Refresh Button Presses
 
 - model: core.Unit
   pk: 8
   fields:
-    - unit_text: Smiles from Strangers
+    unit_text: Smiles from Strangers
 
 - model: core.Unit
   pk: 9
   fields:
-    - unit_text: high fives
+    unit_text: high fives
 
 - model: core.Unit
   pk: 10
   fields:
-    - unit_text: Minutes
+    unit_text: Minutes
 
 - model: core.Unit
   pk: 11
   fields:
-    - unit_text: Lines of Code
+    unit_text: Lines of Code
 
 - model: core.Unit
   pk: 12
   fields:
-    - unit_text: Words
+    unit_text: Words
