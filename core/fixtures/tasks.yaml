@@ -8,3 +8,53 @@
     emoji: 22
     timestamp: "2018-03-28T08:16:00+00:00"
     user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Planning
+    state: 1
+    quantifier: 5
+    unit: 1
+    emoji: 7
+    timestamp: "2018-03-28T08:56:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Setting tasks
+    state: 1
+    quantifier: 1
+    unit: 4
+    emoji: 1
+    timestamp: "2018-03-28T09:05:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Create models
+    state: 2
+    quantifier: 6
+    unit: 3
+    emoji: 22
+    timestamp: "2018-03-28T09:46:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Test suite working
+    state: 2
+    quantifier: 2
+    unit: 4
+    emoji: 19
+    timestamp: "2018-03-28T09:48:00+00:00"
+    user_id: 1
+- model: core.Task
+  pk: null
+  fields:
+    task_text: Django form created
+    state: 2
+    quantifier: 1
+    unit: 5
+    emoji: 22
+    timestamp: "2018-03-28T08:16:00+00:00"
+    user_id: 1
