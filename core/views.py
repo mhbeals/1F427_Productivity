@@ -28,6 +28,7 @@ class TaskSubmitView(CreateView):
         Add missing fields for DB.
         """
 
+        # Timestamp cannot be from form.initial since we want it to be set when the Task is created
         form.instance.timestamp = timezone.datetime.now()
 
         return super().form_valid(form)
