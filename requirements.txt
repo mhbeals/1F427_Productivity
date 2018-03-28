@@ -1,3 +1,4 @@
 django==1.11
 django-bootstrap3
 django-easy-select2
+pytest-django
