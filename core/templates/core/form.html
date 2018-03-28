@@ -1,6 +1,6 @@
 {% load bootstrap3 %}
 <div id="form-display" class="container-fluid" style="height:100%">
-    <h1>🐧 Productivity</h1>
+    <h1 style="font-size: 4rem;">🐧 Productivity</h1>
 
     <div class="row row-center">
         <div class="col-md-4 col-center">
@@ -52,7 +52,7 @@
 
                 <div class="row row-center">
                     {% for emoji in emoji_options %}
-                        <div class="col-md-3 col-center">
+                        <div class="col-md-3 col-sm-4 col-center">
                             <div class="btn btn-default btn-block emoji" onclick="set_emoji({{ emoji.id }});">
                                 {{emoji.emoji_code}}
                             </div>

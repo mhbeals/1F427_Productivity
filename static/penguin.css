@@ -9,3 +9,9 @@
     font-size: 36pt;
     font-family: "Noto Color Emoji";
 }
+.half-height {
+    height: 50%;
+}
+.full-height {
+    height: 100%;
+}

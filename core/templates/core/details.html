@@ -56,3 +56,22 @@
         {% endfor %}
     </table>
 </div>
+
+<div id="{{time}}-fun-details" class="container-fluid {{time}} fun analytics" style="height:100%;overflow:hidden">
+    <h1>Details for fun in the {{time}}</h1>
+    <a href="#{{time}}-overview">Go Back</a>
+    <table width='100%' class='table table-striped table-bordered' >
+        <tr>
+            <th>Emoji</th>
+            <th>Task</th>
+            <th>Duration</th>
+        </tr>
+        {% for task in morning.fun %}
+            <tr class="state_{{task.state}}">
+                <td>{{task.emoji}}</td>
+                <td>{{task.task_text}}</td>
+                <td>{{task.quantifier}} {{task.unit}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
