@@ -38,6 +38,8 @@ Build the database and import stuff:
 ``` bash
 python manage.py migrate
 python manage.py loaddata core/fixtures/emoji.json
+python manage.py loaddata core/fixtures/units.yaml
+python manage.py loaddata core/fixtures/tasks.yaml
 ```
 
 ## Usage
