@@ -9,6 +9,16 @@ class TaskSubmitView(CreateView):
     template_name = 'core/index.html'
     form_class = forms.TaskForm
 
+    def get_initial(self):
+        """
+        Add default user_id - users are not yet implemented.
+        """
+        initial = super().get_initial()
+
+        initial['user_id'] = 1
+
+        return initial
+
     def get_context_data(self, **kwargs):
         """
         Add data to the template context.
