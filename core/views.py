@@ -1,3 +1,4 @@
+import random
 from django.views.generic.edit import CreateView
 
 from core import forms, models
@@ -55,11 +56,25 @@ class TaskSubmitView(CreateView):
 
     @classmethod
     def get_random_emoji(cls):
-        """
-        Get a list of random emoji (as models.Emoji instance), making sure there are enough from each required group.
+        """Get a list of random emoji (as models.Emoji instance),
 
-        :return: List of emoji
-        """
-        emoji = []
+        The number from each required group is set (2 happy, 1
+        notsohappy, 2 workingthinking, 1 fun). The ordering of the list
+        is predictable.
 
-        return emoji
+        :return: List of models.Emoji
+        """
+        random_emoji = []
+
+        for group, n_emoji in (
+                (models.EmojiGroup.HAPPY, 2),
+                (models.EmojiGroup.NOTSOHAPPY, 1),
+                (models.EmojiGroup.WORKINGTHINKING, 2),
+                (models.EmojiGroup.FUN, 1)):
+            matching_emoji = list(models.Emoji.objects.filter(group=group))
+            for entry in random.sample(matching_emoji, n_emoji):
+                random_emoji.append(entry)
+
+        sorted_random_emoji = sorted(random_emoji, key=(lambda x: x.pk))
+
+        return sorted_random_emoji
