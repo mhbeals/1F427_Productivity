@@ -24,6 +24,12 @@
             {% bootstrap_field form.unit show_label=False %}
         </div>
         {{ form.user_id.as_hidden }}
+        {{ form.emoji.as_hidden }}
+        <div class="row">
+            {% for emoji in emoji_options %}
+                {{emoji.emoji_code}}
+            {% endfor %}
+        </div>
         {% buttons %}
             <button type="submit" class="btn btn-primary">
                 Submit
