@@ -1,0 +1,33 @@
+{% load bootstrap3 %}
+<div class="container">
+    <h1>🐧</h1>
+    <form action="/url/to/submit/" method="post" class="form-inline">
+        {% csrf_token %}
+        <div class="row">
+            {% bootstrap_field form.task_text show_label=False %}
+        </div>
+        <div class="row">
+            {% buttons %}
+                <button class="btn btn-default">
+                    New
+                </button>
+                <button class="btn btn-default">
+                    Ongoing
+                </button>
+                <button class="btn btn-default">
+                    Done
+                </button>
+            {% endbuttons %}
+        </div>
+        <div class="row">
+            {% bootstrap_field form.quantifier show_label=False %}
+            {% bootstrap_field form.unit show_label=False %}
+        </div>
+        {{ form.user_id.as_hidden }}
+        {% buttons %}
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        {% endbuttons %}
+    </form>
+</div>
