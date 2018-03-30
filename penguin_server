@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#! /usr/bin/env python
 
 from subprocess import call
 
@@ -8,4 +8,4 @@ for args in (['flush', '--noinput'],
              ['loaddata', 'core/fixtures/units.yaml'],
              ['loaddata', 'core/fixtures/tasks.yaml'],
              ['runserver']):
-    call(['python3', 'manage.py'] + args)
+    call(['python', 'manage.py'] + args)
